@@ -1,169 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap Js -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Lucas Della Sala</title>
+</head>
+<style>
+  body {
+    background-color: #011796;
+    color: gold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+  }
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+  a {
+    color: gold;
+  }
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+  .center {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
-      rel="stylesheet"
-    />
+  .spinner {
+    border: 4px solid gold;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: spin 1s linear infinite;
+  }
 
-    <link rel="icon" 
-      type="image/png" 
-      href="./images/favicon.png">
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
 
-    <title>Lucas Della Sala</title>
-  </head>
-  <body>
-    <div class="container navigation pt-3">
-      <div class="row">
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <i class="fas fa-code fa-2x text-warning pb-3"></i>
-          <h5 class="d-inline pl-2 text-white">Lucas Della Sala</h5>
-        </div>
-        <div class="col-6 pt-2">
-          <div
-            class="row text-center p-0 d-flex justify-content-end align-items-center"
-          >
-            <div class="col-3">
-              <a href="#about" class="text-white navigation-link">About me</a>
-            </div>
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
 
-            <div class="col-3">
-              <a href="#social-media" class="text-white navigation-link"
-                >Social Media</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+<body>
+  <div class="center">
+    <div>
+      <h1>You will be redirected to <a href="https://www.vladydellasala.com">https://vladydellasala.com</a></h1>
     </div>
+    <div class="spinner"></div>
+  </div>
+</body>
 
-    <!-- Main Container -->
-    <div class="main-container container">
-      <div class="row main_row">
-        <div class="col-6">
-          <h2 class="text-white">Hello, I'm</h2>
-          <h1 class="text-warning m-heading">Lucas Della Sala</h1>
-          <h2 class="text-white">Full Stack Web Developer</h2>
-        </div>
-        <div class="col-6">
-          <img
-            src="./images/Lucas Della Sala.png"
-            class="img"
-            id="profile-pic" 
-          />
-        </div>
-      </div>
-    </div>
+<script>
+  window.setTimeout(function () {
+    window.location.href = 'https://www.vladydellasala.com/';
+  }, 3000);
+</script>
 
-    <!-- About Section -->
-    <div id="about" class="container about p-5">
-      <div class="row">
-        <div class="col-6">
-          <img src="./images/about_img.svg" class="img-fluid" />
-        </div>
-        <div class="col-6 pl-5 pt-5 pb-5 text-white">
-          <h3 class="text-warning">About Me</h3>
-          <h1 class="m-heading">Let me introduce myself
-          </h1>
-          <p>
-            My name is Lucas and I am a Full Stack Web Developer at VTEX.
-            I develop applications and solutions for LATAM clients using <b class="text-warning">REACT, NODE, TYPESCRIPT, REST APIs, GRAPHQL</b>, and other technologies.
-          </p>
-          <br />
-          <p>
-            I'm studying <b class="text-warning">Computer Science and Economics</b> at Universidad de Buenos Aires. 
-            Before that, I represented (Argentina) in the <b class="text-warning">48th International Chemistry Olympiad</b> achieving a <b class="text-warning">Bronze Medal</b>.             
-          </p>
-          <button class="btn btn-outline-warning"><a target="_blank" href="https://www.linkedin.com/in/lucasdellasala/">Learn More</a></button>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Social Media Section -->
-    <div id="social-media" class="container-fluid">
-      <div class="container text-white py-5">
-        <h4 class="text-warning">Social Media</h4>
-        <h1 class="m-heading">Let's connect!</h1>
-        <div class="row pt-5">
-          <div class="col-3 media_link btn">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-white"><a target="_blank" href="https://www.linkedin.com/in/lucasdellasala/">LinkedIn</a></h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3 media_link btn">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-white"><a target="_blank" href="https://github.com/lucasdellasala">Github</a></h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-github fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3 media_link btn">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-white"><a target="_blank" href="https://www.youtube.com/channel/UCoXdnmepeg11cX_MheeS10w">Youtube</a></h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-youtube fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3 media_link bg-warning btn">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark"><a href="mailto:lucasdellasalamarkovic@gmail.com">Email</a></h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fas fa-envelope fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-muted text-center py-3 mt-5">
-        <h5>
-          Copyright &copy; 2020 |
-          <a class="text-warning text-decoration-none" href="#about"
-            >Lucas Della Sala</a
-          >
-        </h5>
-      </div>
-    </footer>
-  </body>
 </html>
