@@ -17,6 +17,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   a {
@@ -51,11 +53,16 @@
       transform: rotate(360deg);
     }
   }
+  @media (max-width: 965px) {
+    .text-container h1 {
+      font-size: 1.5em;
+    }
+  }
 </style>
 
 <body>
   <div class="center">
-    <div>
+    <div class="text-container">
       <h1>You will be redirected to <a href="https://www.vladydellasala.com">https://vladydellasala.com</a></h1>
     </div>
     <div class="spinner"></div>
